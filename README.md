@@ -1,10 +1,12 @@
 # django-stripe-sportsclub
-A [Django](https://www.djangoproject.com) web app using the [Stripe Python SDK](https://github.com/stripe/stripe-python) API.
+A [Django](https://www.djangoproject.com) web app using the [Stripe Python SDK](https://github.com/stripe/stripe-python).
 
 ## Table of Contents
 * [General Info](#General-Info)
+* [Environment Variables](#Environment-Variables)
 * [Technologies](#Technologies)
 * [Author Info](#Author-Info)
+* [Additional Notes & Contributions](#Additional-Notes-&-Contributions)
 
 ## General Info
 Version: 2.0, 17/04/2025<br>
@@ -19,6 +21,19 @@ This repository is public version of a web app that was commissioned by a sports
     * View matches available to members
     * View the status of payments
     * Export all bookings to be able to print out
+
+## Environment Variables
+The environment variables used are mainly for setting up requests with the [Stripe Python SDK](https://github.com/stripe/stripe-python). Here is a list of the environment variables needed:
+* STRIPE_PK_KEY: Public Key for your Stripe API credentials
+* STRIPE_SK_KEY: Secret Key for your Stripe API credentials
+* STRIPE_WH_SECRET: Secret for your Stripe Webhook
+* STRIPE_CONN_ID: ID of the connected account in Stripe to transfer purchase to
+* STRIPE_DOMAIN_URL: URL for your web app
+* STRIPE_PRODUCT_LIMIT: Product Limit for Stripe to pull through (set to however many products you have/want, has to be an integer)
+* STRIPE_PERCENT_FEE: Adds a percentage fee to a transaction (set to 0.00 if not needed)
+* STRIPE_AMOUNT_FEE: Adds a decimal fee to a transaction (set to 0.00 if not needed)
+
+You can see them set in the <b>core/settings.py</b> file from there, they are imported elsewhere when need in the web app.
 
 ## Technologies
 Created in Python 3.10
