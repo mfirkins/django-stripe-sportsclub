@@ -6,7 +6,7 @@ A [Django](https://www.djangoproject.com) web app using the [Stripe Python SDK](
 * [Environment Variables](#Environment-Variables)
 * [Technologies](#Technologies)
 * [Author Info](#Author-Info)
-* [Additional Notes & Contributions](#Additional-Notes-and-Contributions)
+* [Additional Notes and Contributions](#Additional-Notes-and-Contributions)
 
 ## General Info
 Version: 2.0, 17/04/2025<br>
