@@ -18,6 +18,7 @@ This repository is public version of a web app that was commissioned by a sports
     * View all bookings made by members
     * View matches available to members
     * View the status of payments
+    * Export all bookings to be able to print out
 
 ## Technologies
 Created in Python 3.10
@@ -28,6 +29,7 @@ Along with:
 ## Author Info
 Name: Morgan Firkins<br>
 GitHub: https://github.com/mfirkins<br>
-## Additional Notes
+## Additional Notes & Contributions
 Thanks to [palzino]("https://github.com/palzino") for contributing to the original project
-In the future the repository will upgrade its dependencies, especially the new StripeClient pattern and updating the Stripe Python SDK to a version >= 8. 
+In the future the repository will upgrade its dependencies, especially the new StripeClient pattern and updating the Stripe Python SDK to a version >= 8.
+<a href="https://www.freepik.com/free-photo/tennis-racket-minimal-still-life_12351967.htm">Images by freepik</a>

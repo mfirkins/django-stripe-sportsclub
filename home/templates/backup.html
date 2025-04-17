@@ -1,0 +1,65 @@
+<div v-if="form.ent==='single' || form.ent==='solo'">
+    <form @submit.prevent="singlewrite">
+        <div class="row form-group">
+
+            <h2 class="text-white">Your Details</h2>
+            <div class="column">
+                <label for="fullName">Full Name</label>
+                <input id="fullName" class="form-control" v-model="form.name" type="text" placeholder="John Smith"><br>
+                <label for="membershipNumber">Membership Number</label>
+                <input id="membershipNumber" class="form-control" v-model="form.memNum" type="text"
+                    placeholder="123456"><br>
+            </div>
+            <div class="column">
+                <label for="gender">Gender</label>
+                <select id="gender" class="form-control" v-model="form.gender">
+                    <option disabled value="">Please select your gender...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Prefer not to say</option>
+                </select><br>
+            </div>
+        </div>
+        <div class="row form-group">
+            <h2 class="text-white">Your Contact Information</h2>
+            <div class="column">
+
+                <label for="email">Email Address</label>
+                <input id="email" class="form-control" v-model="form.email" type="text"
+                    placeholder="johnsmith@example.com"><br>
+            </div>
+            <div class="column">
+                <label for="phoneNumber">Phone Number</label>
+                <input id="phoneNumber" class="form-control" v-model="form.phonum" type="text"
+                    placeholder="012345678910"><br>
+            </div>
+        </div>
+        <label for="skillLevel">Skill Level</label>
+        <div class="alert alert-danger fade show" role="alert">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <b> Before you choose your skill level</b>
+            <p>Make sure you choose the correct level, and be sure that you match the following criteria before
+                submitting. Otherwise you may not be able to play on the day</p>
+            <ui>
+                <li>
+                    <b>Level A:</b> High Performance
+                </li>
+                <li>
+                    <b>Level B:</b> Competitive
+                </li>
+                <li>
+                    <b>Level C:</b> Beginners
+                </li>
+            </ui>
+        </div>
+        <select id="skillLevel" class="form-control" v-model="form.gender">
+            <option disabled value="">Please select your skill level</option>
+            <option>Level A</option>
+            <option>Level B</option>
+            <option>Level C</option>
+        </select><br>
+
+
+
+        <button class="btn btn-primary" type="submit">Click to proceed to payment</button>
+    </form>

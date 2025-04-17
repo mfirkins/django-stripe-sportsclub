@@ -1,0 +1,112 @@
+{% extends 'base.html' %} {% block title %}Home{% endblock %}
+{% load static %}
+{% block content %}
+<h1 class="h1 text-white text-center">Welcome to the Sports Club event!</h1>
+<div style="display: flex; align-items: center; justify-content: center; margin: 10px;">
+    <img src="{% static 'images/racket.jpg' %}" id="logo" style="width: 175px; height: 175px;">
+    <img src="{% static 'images/racket.png' %}" style="width: 175px; height: auto; margin-left: 15px;">
+
+</div>
+
+<h2 class="text-center text-white">Lorem ipsum dolor sit amet, consectetur adipiscing.</h2>
+
+<div class="container">
+    <p class="text-center text-white" style="text-align: center; margin-top: 10px; ">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. In eget maximus dui. Maecenas lorem turpis, finibus quis mauris ut, maximus
+        convallis risus. Nulla elementum eleifend neque, ut vulputate purus scelerisque in. Cras dui felis, dignissim
+        quis posuere in, suscipit sed libero. In dictum vitae velit sit amet hendrerit. Mauris consectetur sagittis nunc
+        id hendrerit. Curabitur massa ligula, vulputate eget semper ut, bibendum sed ex.</p>
+</div><br><br>
+<div class="container">
+    <p class="text-center text-white fs-2">Please select the type of match you wish to sign up for below:</p>
+</div>
+<div id="form-internal-container-no-bg">
+    <div class="container-fluid mb-4">
+        <div class="card-group">
+            <div class="col-mt-4">
+                <div class="shadow-lg p-2 card bg-light mx-auto"
+                    style="width: 18rem; margin-right: 15px !important; margin-top: 15px !important;">
+                    <div class="text-center">
+                        <img src="{% static 'images/match_pictures/singles.png' %}" width="200">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block">$0.00</span>
+                        <span>Singles Match</span>
+                        <div class="buttons d-flex flex-row">
+                            <a href="{% url 'singles' %}" class="btn btn-primary">Select
+                            </a>
+                        </div>
+                        <div class="weight">
+                            <small>1v1 any other player that signs up for another singles match</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-mt-4">
+                <div class="shadow-lg p-2 card bg-light mx-auto"
+                    style="width: 18rem; margin-right: 15px !important; margin-top: 15px !important;">
+                    <div class="text-center">
+                        <img src="{% static 'images/match_pictures/mixeddoubles.png' %}" width="200">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block">$0.00</span>
+                        <span>Mixed Doubles Match</span>
+                        <div class="buttons d-flex flex-row">
+                            <a href="{% url 'mixeddoubles' %}" class="btn btn-primary">Select
+                            </a>
+                        </div>
+                        <div class="weight">
+                            <small>Standard doubles match, but with mixed genders on each team</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-mt-4">
+                <div class="shadow-lg p-2 card bg-light mx-auto"
+                    style="width: 18rem; margin-right: 15px !important; margin-top: 15px !important;">
+                    <div class="text-center">
+                        <img src="{% static 'images/match_pictures/doubles.png' %}" width="200">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block">$0.00</span>
+                        <span>Doubles Match</span>
+                        <div class="buttons d-flex flex-row">
+                            <a href="{% url 'doubles' %}" class="btn btn-primary">Select
+                            </a>
+                        </div>
+                        <div class="weight">
+                            <small>Standard doubles match, each team member on a team is the same gender</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-mt-4">
+                <div class="shadow-lg p-2 card bg-light mx-auto"
+                    style="width: 18rem; margin-right: 15px !important; margin-top: 15px !important;">
+                    <div class="text-center">
+                        <img src="{% static 'images/match_pictures/doublesnp.png' %}" width="200">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block">$0.00</span>
+                        <span>Doubles Match With No Partner</span>
+                        <div class="buttons d-flex flex-row">
+                            <a href="{% url 'solo' %}" class="btn btn-primary">Select
+                            </a>
+                        </div>
+                        <div class="weight">
+                            <small>Want to play a doubles match, but have no one to play with? This match is for
+                                you</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
