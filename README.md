@@ -6,7 +6,7 @@ A [Django](https://www.djangoproject.com) web app using the [Stripe Python SDK](
 * [Environment Variables](#Environment-Variables)
 * [Technologies](#Technologies)
 * [Author Info](#Author-Info)
-* [Additional Notes & Contributions](#Additional-Notes-&-Contributions)
+* [Additional Notes & Contributions](#Additional-Notes-and-Contributions)
 
 ## General Info
 Version: 2.0, 17/04/2025<br>
@@ -44,7 +44,7 @@ Along with:
 ## Author Info
 Name: Morgan Firkins
 GitHub: https://github.com/mfirkins
-## Additional Notes & Contributions
+## Additional Notes and Contributions
 Thanks to [palzino](https://github.com/palzino) for contributing to the original project.
 In the future the repository will upgrade its dependencies, especially the new StripeClient pattern and updating the Stripe Python SDK to a version >= 8.
 <a href="https://www.freepik.com/free-photo/tennis-racket-minimal-still-life_12351967.htm">Images by freepik</a>
