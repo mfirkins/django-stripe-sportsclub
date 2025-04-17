@@ -42,8 +42,8 @@ Along with:
 * Stripe Python SDK v5 ([uses the legacy pattern](https://github.com/stripe/stripe-python/wiki/Migration-guide-for-v8-(StripeClient)))
 * [Django Jazzmin](https://github.com/farridav/django-jazzmin)
 ## Author Info
-Name: Morgan Firkins<br>
-GitHub: https://github.com/mfirkins<br>
+Name: Morgan Firkins
+GitHub: https://github.com/mfirkins
 ## Additional Notes & Contributions
 Thanks to [palzino](https://github.com/palzino) for contributing to the original project.
 In the future the repository will upgrade its dependencies, especially the new StripeClient pattern and updating the Stripe Python SDK to a version >= 8.
